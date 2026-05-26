@@ -976,10 +976,10 @@ function handleOverlayClick(e) {
 function calcBMI(w, h) { return (w / ((h/100) ** 2)).toFixed(1); }
 
 function bmiCat(b) {
-  if (b < 18.5) return 'Underweight';
-  if (b < 25)   return 'Healthy Weight';
-  if (b < 30)   return 'Overweight';
-  return 'Obese';
+  if (b < 18.5) return 'Below Healthy Range';
+  if (b < 25)   return 'Healthy Range';
+  if (b < 30)   return 'Above Healthy Range';
+  return 'High BMI — Room to Improve';
 }
 
 function calcBF(t, s, a, age) {
